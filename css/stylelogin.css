@@ -37,3 +37,8 @@ form .registro{
 form .recordar{
     padding-top: 10px;
 }
+@media (max-width: 768px) /* Creo que esa medida esta bien, no me acuerdo cual es exactamente */ {
+    .formulario {
+        width: 80%; 
+    }
+}

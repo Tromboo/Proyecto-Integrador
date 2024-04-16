@@ -13,7 +13,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
+    width: 40%;
     background-color:  white;
     border-radius: 10px;
     padding-bottom: 10px;
@@ -21,4 +21,8 @@ body {
 div{
     padding-top: 20px;
 }
-
+@media (max-width: 768px) /* Creo que esa medida esta bien, no me acuerdo cual es exactamente */ {
+    .formulario {
+        width: 80%; 
+    }
+}
