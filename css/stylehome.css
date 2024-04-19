@@ -70,7 +70,7 @@ padding-left: 30px;
     display: inline-block;
     margin-right: 60px;
     margin-bottom: 60px;
-    display: flexbox;
+    display: flexbox; 
 }
 h2{
     display: block;
