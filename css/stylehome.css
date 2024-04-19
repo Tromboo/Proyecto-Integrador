@@ -99,6 +99,70 @@ h3{
     padding-bottom: 4px;
 }
 
+/* Category */
+.product {
+    flex-basis: 20%; /* Ajusta esto según el número de productos que quieras en una fila */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra para un efecto elevado */
+    margin: 10px; /* Espacio alrededor de cada producto */
+    padding: 20px; /* Espacio dentro de cada contenedor de producto */
+    text-align: center; /* Alinea el texto al centro */
+    background-color: #fff; /* Fondo blanco para el contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    display: flex; /* Utiliza flexbox para alinear los ítems */
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: space-between; /* Distribuye el espacio uniformemente */
+}
+.product img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+.category-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* formulario */
+.registro{
+    display: flex;
+    justify-content: center;
+padding-top: 7%;
+}
+.fondo {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(117, 41, 41);
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    background-color:  white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+div{
+    padding-top: 20px;
+}
+
+
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -126,5 +190,15 @@ h3{
         margin-right: 0; 
         display: flexbox;
         flex-direction: column;
+    }
+    .product {
+        flex-basis: 100%;/* Ajusta esto según el número de productos que quieras en una fila */
+        margin: 10px 0; /* Espacio alrededor de cada producto */
+    }
+    .products {
+        flex-direction: column; /* Organiza los elementos en columna */
+    }
+    .formulario {
+        width: 80%; 
     }
 }
