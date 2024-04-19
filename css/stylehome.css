@@ -56,7 +56,7 @@ padding-left: 30px;
 footer{
     background-color: rgb(117, 41, 41);
     padding: 10px;
-    height: 5vh;
+    height: auto;
 }
 .descripcion {
     font-size: 12px;
@@ -87,6 +87,7 @@ h3{
     padding-top: 1vh;
     padding-left: 20px;
     padding-right: 10px;
+    padding-bottom: 4px;
 }
 
 @media (max-width: 768px) {
