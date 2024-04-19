@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(117, 41, 41);
-    height: 100vh;
 }
 .formulario{
     display: flex;
