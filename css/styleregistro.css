@@ -7,6 +7,7 @@
 main{
     display: flex;
     justify-content: center;
+padding-top: 7%;
 }
 body {
     margin: 0;
@@ -39,7 +40,7 @@ div{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 15vh;
 }
 
 nav{
@@ -79,8 +80,7 @@ display: flex;
 
 @media (max-width: 768px) /* Creo que esa medida esta bien, no me acuerdo cual es exactamente */ {
     .formulario {
-        width: 80%; 
-        top: 75%;
+        width: 80%;
     }
     nav {
         height: auto; 
@@ -95,5 +95,8 @@ display: flex;
         margin-bottom: 10px; 
         width: auto; 
         text-align: center;
+    }
+    main{
+        padding-top: 0%;
     }
 }

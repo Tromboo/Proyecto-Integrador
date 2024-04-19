@@ -56,7 +56,7 @@ li{
 /* productos */
 section{
     background-color: white;
-    height: 55vh;
+    height: auto;
 padding-left: 30px;
 
 }
@@ -64,17 +64,18 @@ padding-left: 30px;
 .descripcion {
     font-size: 12px;
     width: 160px;
+    padding-bottom: 5px;
 }
 .productos{
     display: inline-block;
     margin-right: 60px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     display: flexbox;
 }
 h2{
     display: block;
-    padding-bottom: 10px;
-    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
     font-size: 30px;
 }
 h3{
