@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* footer */
+.Integrantes{
+    color: beige;
+}
+footer{
+    background-color: rgb(117, 41, 41);
+    padding: 10px;
+    height: auto;
+}
+
+/* Header */
+nav{
+    background-color: rgb(117, 41, 41);
+    padding: 10px;
+    height: 10vh;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style-type: none;
+}
+.nav{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 12px 24px;
+    border-radius: 5px;
+    width: auto;
+    display: inline-block;
+}
+.container{
+    background-color: rgb(117, 41, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+.imagenproducto{
+    height: 150px;
+    width: auto;
+    
+}
+.logo{
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4; /* Fondo claro para la página */
+    color: #333; /* Color de texto oscuro para contraste */
+}
+
+.category-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    flex-basis: 20%; /* Ajusta esto según el número de productos que quieras en una fila */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra para un efecto elevado */
+    margin: 10px; /* Espacio alrededor de cada producto */
+    padding: 20px; /* Espacio dentro de cada contenedor de producto */
+    text-align: center; /* Alinea el texto al centro */
+    background-color: #fff; /* Fondo blanco para el contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    display: flex; /* Utiliza flexbox para alinear los ítems */
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: space-between; /* Distribuye el espacio uniformemente */
+}
+.product img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column; /* Organiza los elementos en columna */
+    }
+    .product {
+        flex-basis: 100%;/* Ajusta esto según el número de productos que quieras en una fila */
+        margin: 10px 0; /* Espacio alrededor de cada producto */
+    }
+    nav {
+        height: auto; 
+    }
+
+    ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .nav {
+        margin-bottom: 10px; 
+        width: auto; 
+        text-align: center;
+    }
+}
