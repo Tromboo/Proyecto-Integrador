@@ -11,6 +11,9 @@ footer{
     background-color: rgb(117, 41, 41);
     padding: 10px;
     height: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Header */
@@ -70,7 +73,7 @@ padding-left: 30px;
     display: inline-block;
     margin-right: 60px;
     margin-bottom: 60px;
-    display: flexbox;
+    display: flexbox; 
 }
 h2{
     display: block;
