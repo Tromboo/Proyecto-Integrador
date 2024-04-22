@@ -101,16 +101,15 @@ h3{
 
 /* Category */
 .product {
-    flex-basis: 20%; /* Ajusta esto según el número de productos que quieras en una fila */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra para un efecto elevado */
-    margin: 10px; /* Espacio alrededor de cada producto */
-    padding: 20px; /* Espacio dentro de cada contenedor de producto */
-    text-align: center; /* Alinea el texto al centro */
-    background-color: #fff; /* Fondo blanco para el contenedor */
-    border-radius: 8px; /* Bordes redondeados */
-    display: flex; /* Utiliza flexbox para alinear los ítems */
-    flex-direction: column; /* Organiza los elementos en columna */
-    justify-content: space-between; /* Distribuye el espacio uniformemente */
+    flex-basis: 20%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 10px; 
+    padding: 20px;
+    text-align: center; 
+    border-radius: 8px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
 }
 .product img {
     width: 100%;
@@ -129,11 +128,6 @@ h1 {
     text-align: center;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 
 /* formulario */
@@ -198,11 +192,11 @@ div{
         flex-direction: column;
     }
     .product {
-        flex-basis: 100%;/* Ajusta esto según el número de productos que quieras en una fila */
-        margin: 10px 0; /* Espacio alrededor de cada producto */
+        flex-basis: 100%;
+        margin: 10px 0; 
     }
     .products {
-        flex-direction: column; /* Organiza los elementos en columna */
+        flex-direction: column; 
     }
     .formulario {
         width: 80%; 
@@ -218,7 +212,7 @@ div{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    
 }
 
 .recuperar-form {
