@@ -203,3 +203,54 @@ div{
         width: 80%; 
     }
 }
+
+
+
+
+/* Recuperar Contraseña */
+.recuperar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.recuperar-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.recuperar-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recuperar-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.recuperar-form input[type="email"],
+.recuperar-form input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.recuperar-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(117, 41, 41);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.recuperar-form button:hover {
+    background-color: #ffffff;
+}
