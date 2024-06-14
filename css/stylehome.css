@@ -38,18 +38,14 @@ li{
     width: auto;
     display: inline-block;
 }
-.container{
+.containerHeader{
     background-color: rgb(117, 41, 41);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 15vh;
 }
-.imagenproducto{
-    height: 150px;
-    width: auto;
-    
-}
+
 .logo{
     max-width: 100%;
     max-height: 100%;
@@ -57,6 +53,28 @@ li{
 }
 
 /* productos */
+
+.producto .imagenproducto{
+    height: auto;
+    width: 50%;
+    max-width: 200px;
+    
+}
+
+.subContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 20px;
+}
+
+.productos{ 
+    flex: 20px; 
+    max-width: 300px; 
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
 section{
     background-color: white;
     height: auto;
@@ -69,12 +87,7 @@ padding-left: 30px;
     width: 160px;
     padding-bottom: 5px;
 }
-.productos{
-    display: inline-block;
-    margin-right: 60px;
-    margin-bottom: 60px;
-    display: flexbox; 
-}
+
 h2{
     display: block;
     padding-bottom: 20px;
