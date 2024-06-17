@@ -29,6 +29,6 @@ console.log(arrayDeProductos);
         divSeccion.innerHTML = accesorios;
     })
     .catch(function (error) {
-        console.error('Error fetching products:', error);
+        console.error(error);
     });
 
