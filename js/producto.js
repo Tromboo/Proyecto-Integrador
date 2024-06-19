@@ -22,5 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .catch(error => console.error('El error es: ', error));
     }
+    
+    // agregar al carrito
+function addToCart(productId) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push(productId);
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
 });
 
