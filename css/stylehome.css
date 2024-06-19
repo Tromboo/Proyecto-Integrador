@@ -58,6 +58,7 @@ li{
     width: auto;
     height: auto;
     max-height: 200px;
+    padding-top: 30px;
 }
 
 .subContainer{
@@ -138,7 +139,11 @@ h1 {
 .registro{
     display: flex;
     justify-content: center;
-padding-top: 4%;
+    padding-top: 4%;
+}
+.registro2{
+    display: flex;
+    justify-content: center;
 }
 .fondo {
     margin: 0;
@@ -173,9 +178,7 @@ padding-top: 4%;
     margin-top: 10px;
 }
 
-div{
-    padding-top: 20px;
-}
+
 
 .imagenproducto1{
     height: 150px;
@@ -257,8 +260,6 @@ div{
 .recuperar-form input[type="email"],
 .recuperar-form input[type="checkbox"] {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
 }
 
 .recuperar-form button {
