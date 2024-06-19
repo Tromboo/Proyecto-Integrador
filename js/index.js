@@ -20,8 +20,8 @@ console.log(arrayDeProductos);
 
     for (let i = 4; i < 8; i++) {
             accesorios += `<div>
-                        <img src="${arrayDeProductos[i].image}" alt="${arrayDeProductos[i].title}" class="imagenProducto">
-                        <h4>${arrayDeProductos[i].title}</h4>
+                        <img src="${arrayDeProductos[i].image}" alt="" class="imagenProducto">
+                        <h3>${arrayDeProductos[i].title}</h3>
                         <p>${arrayDeProductos[i].description}</p>
                         <p>Precio: $${arrayDeProductos[i].price}</p>
                         <a href="./producto.html?id=${arrayDeProductos[i].id}">Ver más</a>
@@ -43,8 +43,8 @@ console.log(arrayDeProductos);
     
         for (let i = 9; i < 13; i++) {
                 electronica += `<div>
-                            <img src="${arrayDeProductos[i].image}" alt="${arrayDeProductos[i].title}" class="imagenProducto">
-                            <h4>${arrayDeProductos[i].title}</h4>
+                            <img src="${arrayDeProductos[i].image}" alt="" class="imagenProducto">
+                            <h3>${arrayDeProductos[i].title}</h3>
                             <p>${arrayDeProductos[i].description}</p>
                             <p>Precio: $${arrayDeProductos[i].price}</p>
                             <a href="./producto.html?id=${arrayDeProductos[i].id}">Ver más</a>
