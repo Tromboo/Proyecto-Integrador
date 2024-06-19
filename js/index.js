@@ -32,7 +32,6 @@ console.log(arrayDeProductos);
     }     
 
         divSeccion.innerHTML = accesorios;
-<<<<<<< HEAD
     
 
 //ropa hombre
@@ -42,20 +41,13 @@ let divRopaHombre = document.querySelector('.subContainerRopaH');
         for (let i = 0; i < 4; i++) {
             ropaH += `<div>
                         <img src="${arrayDeProductos[i].image}" alt="${arrayDeProductos[i].title}" class="imagenProducto">
-                        <h4>${arrayDeProductos[i].title}</h4>
+                        <h3>${arrayDeProductos[i].title}</h3>
                         <p>${arrayDeProductos[i].description}</p>
                         <p>Precio: $${arrayDeProductos[i].price}</p>
                         <a href="./producto.html?id=${arrayDeProductos[i].id}">Ver más</a>
                       </div>`;
         }
         divRopaHombre.innerHTML = ropaH;
-
-})
-    .catch(function(e) {
-        console.error(e);
-    })
-=======
-
   
 
 
@@ -80,4 +72,3 @@ let divRopaHombre = document.querySelector('.subContainerRopaH');
         .catch(function (error) {
             console.error(error);
         });
->>>>>>> 405bca864077bb469c3830bc81cc68b9b783de1a
