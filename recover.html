@@ -12,46 +12,48 @@
         <div class="containerHeader">
         <img src="./fotos/logo.jpg" class="logo" alt="">
     </div>
-<nav>
-    <ul>
-          <li>
-            <a href="./index.html" class="nav">Home</a>
-         </li>
-         <li>
-            <a href="./category.html" class="nav">Electronica</a>
-         </li>
-         <li>
-            <a href="./category.html" class="nav">Accesorios</a>
-         </li>
-         <li>
-            <a href="./category.html" class="nav">Hombre</a>
-         </li>
-         <li>
-            <a href="./category.html" class="nav">Mujer</a>
-         </li>
-         <li>
-            <a href="./cart.html" class="nav">Carrito</a>
-         </li>
-         <li>
-            <a href="./login.html" class="nav">Login</a>
-         </li>
-         <li>
-            <a href="./register.html" class="nav">Registro</a>
-         </li>
-    </ul>
+    <nav>
+        <ul>
+              <li>
+                <a href="./index.html" class="nav">Home</a>
+             </li>
+             <li>
+                <a href="./category.html?category=electronics" class="nav">Electrónica</a>
+             </li>
+             <li>
+                <a href="./category.html?category=jewelery" class="nav">Accesorios</a>
+             </li>
+             <li>
+                <a href="./category.html?category=men's clothing" class="nav">Hombre</a>
+             </li>
+             <li>
+                <a href="./category.html?category=women's clothing" class="nav">Mujer</a>
+             </li>
+             <li>
+                <a href="./cart.html" class="nav">Carrito</a>
+             </li>
+             <li>
+                <a href="./login.html" class="nav">Login</a>
+             </li>
+             <li>
+                <a href="./register.html" class="nav">Registro</a>
+             </li>
+        </ul>
 </nav>
     </header>
     <main class="registro">
     <div class="formulario">
-        <form action="#" method="POST">
+        <form action="#" method="get">
             <h2>Recuperar Contraseña</h2>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email">
+                <p class="validacionEmail"> </p>
             </div>
             <div class="form-group">
-                <input type="checkbox" id="confirm" name="confirm">
+                <input type="checkbox" id="confirm">
                 <label for="confirm">Quiero recuperar mi contraseña</label>
+                <p class="recuperacionContraseña"></p>
             </div>
             <div class="form-group">
                 <button type="submit">Recuperar</button>
@@ -62,5 +64,6 @@
 <footer>
     <p class="Integrantes">Integrantes del equipo: Justo Liceaga, Lucio Fanti y Tomás Bendahan</p>
         </footer>
+      <script src="js/recover.js"></script>  
 </body>
 </html>

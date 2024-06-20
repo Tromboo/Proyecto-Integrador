@@ -58,6 +58,7 @@ li{
     width: auto;
     height: auto;
     max-height: 200px;
+    padding-top: 30px;
 }
 
 .subContainer{
@@ -85,10 +86,10 @@ padding-left: 30px;
 h2{
     display: block;
     padding-bottom: 20px;
-    padding-top: 10px;
+    padding-top: 20px;
     font-size: 30px;
 }
-h4{
+h3{
     padding-bottom: 10px;
     padding-top: 20px;
     display: block;
@@ -138,7 +139,11 @@ h1 {
 .registro{
     display: flex;
     justify-content: center;
-padding-top: 7%;
+    padding-top: 4%;
+}
+.registro2{
+    display: flex;
+    justify-content: center;
 }
 .fondo {
     margin: 0;
@@ -146,19 +151,34 @@ padding-top: 7%;
     background-color: rgb(117, 41, 41);
 }
 .formulario{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-    background-color:  white;
-    border-radius: 10px;
-    padding-bottom: 10px;
-    width: 400px;
+   background-color: white;
+   padding: 20px;
+   text-align: center;
+   width: 300px;
 }
-div{
-    padding-top: 20px;
+
+.formulario h1{
+    margin-bottom: 20px;
 }
+
+.formulario input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.formulario button{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.formulario a{
+    display: block;
+    margin-top: 10px;
+}
+
+
 
 .imagenproducto1{
     height: 150px;
@@ -240,8 +260,6 @@ div{
 .recuperar-form input[type="email"],
 .recuperar-form input[type="checkbox"] {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
 }
 
 .recuperar-form button {

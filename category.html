@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/stylehome.css"> 
+    <link rel="stylesheet" href="./css/stylehome.css">
     <title>Categoría Electrónica</title>
 </head>
 <body>
@@ -11,72 +11,42 @@
         <div class="containerHeader">
         <img src="./fotos/logo.jpg" class="logo" alt="">
     </div>
-<nav>
-    <ul>
-          <li>
-            <a href="./index.html" class="nav">Home</a>
-         </li>
-         <li>
-            <a href="./category.html" class="nav">Electronica</a>
-         </li>
-         <li>
-            <a href="./category.html" class="nav">Accesorios</a>
-         </li>
-         <li>
-            <a href="./category.html" class="nav">Hombre</a>
-         </li>
-         <li>
-            <a href="./category.html" class="nav">Mujer</a>
-         </li>
-         <li>
-            <a href="./cart.html" class="nav">carrito</a>
-         </li>
-         <li>
-            <a href="./login.html" class="nav">login</a>
-         </li>
-         <li>
-            <a href="./register.html" class="nav">Registro</a>
-         </li>
-    </ul>
+    <nav>
+        <ul>
+              <li>
+                <a href="./index.html" class="nav">Home</a>
+             </li>
+             <li>
+                <a href="./category.html?category=electronics" class="nav">Electrónica</a>
+             </li>
+             <li>
+                <a href="./category.html?category=jewelery" class="nav">Accesorios</a>
+             </li>
+             <li>
+                <a href="./category.html?category=men's clothing" class="nav">Hombre</a>
+             </li>
+             <li>
+                <a href="./category.html?category=women's clothing" class="nav">Mujer</a>
+             </li>
+             <li>
+                <a href="./cart.html" class="nav">Carrito</a>
+             </li>
+             <li>
+                <a href="./login.html" class="nav">Login</a>
+             </li>
+             <li>
+                <a href="./register.html" class="nav">Registro</a>
+             </li>
+        </ul>
 </nav>
     </header>
-    <main class="category-container">
-        <h1>Productos de Electrónica</h1>
-        <div class="products">
-            <div class="product">
-                <img src="./fotos/electonicos/auris.jpg" alt="Producto 1">
-                <h2>Producto 1</h2>
-                <p>$150.00</p>
-                <a href="producto.html">Ver más</a>
-            </div>
-            <div class="product">
-                <img src="./fotos/electonicos/consola.jpg" alt="Producto 2">
-                <h2>Producto 2</h2>
-                <p>$200.00</p>
-                <a href="producto.html">Ver más</a>
-            </div>
-            <div class="product">
-                <img src="./fotos/electonicos/pc.webp" alt="Producto 3">
-                <h2>Producto 3</h2>
-                <p>$300.00</p>
-                <a href="producto.html">Ver más</a>
-            </div>
-            <div class="product">
-                <img src="./fotos/electonicos/play 5.webp" alt="Producto 4">
-                <h2>Producto 4 </h2>
-                <p>$400.00</p>
-                <a href="producto.html">Ver más</a>
-            </div>
-            <div class="product">
-                <img src="./fotos/electonicos/ps4.jpg" alt="Producto 5">
-                <h2>Producto 5</h2>
-                <p>$500.00</p>
-                <a href="producto.html">Ver más</a>
-            </div>
-        </div>
+    <main class="categoryContainer">
+        <div id="products"></div>
+        
     </main>
     <footer>
-<p class="Integrantes">Integrantes del equipo: Justo Liceaga, Lucio Fanti y Tomás Bendahan</p>
+        <p class="Integrantes">Integrantes del equipo: Justo Liceaga, Lucio Fanti y Tomás Bendahan</p>
     </footer>
+    <script src="./js/category.js"></script>
 </body>
 </html>

@@ -11,57 +11,48 @@
         <div class="containerHeader">
         <img src="./fotos/logo.jpg" class="logo" alt="">
     </div>
-<nav>
-    <ul>
-          <li>
-            <a href="./index.html" class="nav">Home</a>
-         </li>
-         <li>
-            <a href="./category.html" class="nav">Electronica</a>
-         </li>
-         <li>
-            <a href="./category.html" class="nav">Accesorios</a>
-         </li>
-         <li>
-            <a href="./category.html" class="nav">Hombre</a>
-         </li>
-         <li>
-            <a href="./category.html" class="nav">Mujer</a>
-         </li>
-         <li>
-            <a href="./cart.html" class="nav">Carrito</a>
-         </li>
-         <li>
-            <a href="./login.html" class="nav">Login</a>
-         </li>
-         <li>
-            <a href="./register.html" class="nav">Registro</a>
-         </li>
-    </ul>
+    <nav>
+        <ul>
+              <li>
+                <a href="./index.html" class="nav">Home</a>
+             </li>
+             <li>
+                <a href="./category.html?category=electronics" class="nav">Electrónica</a>
+             </li>
+             <li>
+                <a href="./category.html?category=jewelery" class="nav">Accesorios</a>
+             </li>
+             <li>
+                <a href="./category.html?category=men's clothing" class="nav">Hombre</a>
+             </li>
+             <li>
+                <a href="./category.html?category=women's clothing" class="nav">Mujer</a>
+             </li>
+             <li>
+                <a href="./cart.html" class="nav">Carrito</a>
+             </li>
+             <li>
+                <a href="./login.html" class="nav">Login</a>
+             </li>
+             <li>
+                <a href="./register.html" class="nav">Registro</a>
+             </li>
+        </ul>
 </nav>
     </header>
     <main class="registro">
-<div class="formulario">
-    <h1>Inicio de sesion</h1>
-    <form action="index.html" method="get">
-        <div class="mail">
-            <input type="email" required> 
-            <label>Email</label>
-        </div>
-        <div class="contraseña">
-            <input type="password" required>    
-            <label>Contraseña</label>
-        </div>
-        <div class="ingreso"></div>
-        <input type="submit" value="Ingresar">
-        <div class="registro"> 
+        <div class="formulario">
+            <h1>Inicio de sesion</h1>
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="Email" >
+                <input type="password" id="password" placeholder="Contraseña" >
+                <button type="submit">Ingresar</button>
+            </form>
             <a href="./register.html">No tengo cuenta</a>
+            <a href="./recover.html">Recuperar contraseña</a>
         </div>
-        <div class="recordar">¿Olvido su contraseña?</div>
-            <a href="./recover.html">Recuperar contraseña</a> 
-    </form>
-</div>
-</main>
+    </main>
+    <script src="./js/login.js"></script>
 <footer>
     <p class="Integrantes">Integrantes del equipo: Justo Liceaga, Lucio Fanti y Tomás Bendahan</p>
         </footer>   
