@@ -2,9 +2,9 @@
 
 
 document.addEventListener("DOMContentLoaded", function (){
-let email = document.querySelector("#email");
-let validacionEmail = document.querySelector(".validacionEmail");
-email.addEventListener('input', function() {
+    let email = document.querySelector("#email");
+    let validacionEmail = document.querySelector(".validacionEmail");
+        email.addEventListener('input', function() {
     if (email.value === '') {
         validacionEmail.innerText = 'Por favor complete el campo';
     } else {
