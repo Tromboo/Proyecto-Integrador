@@ -43,20 +43,23 @@
     </header>
     <main class="registro">
     <div class="formulario">
-        <form action="#" method="get">
+        <form action="#" method="get" id="recoverForm">
             <h2>Recuperar Contraseña</h2>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email">
+            <div>
+                <input type="email" id="email"placeholder="Email">
                 <p class="validacionEmail"> </p>
             </div>
             <div class="form-group">
                 <input type="checkbox" id="confirm">
                 <label for="confirm">Quiero recuperar mi contraseña</label>
-                <p class="recuperacionContraseña"></p>
+                <p class="recuperarContraseña"></p>
             </div>
-            <div class="form-group">
+            <div>
                 <button type="submit">Recuperar</button>
+            </div>
+            <div>
+                <h4 id="alert"></h4>
+                <a class="vuelta" href="./login.html" style="display: none;">Ir a log in</a>
             </div>
         </form>
     </div>
