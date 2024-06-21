@@ -1,20 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var userEmail = localStorage.getItem("userEmail");
+    let userEmail = localStorage.getItem("userEmail");
 
     if (userEmail) {
-        var header = document.querySelector('header');
-        header.innerHTML = '<span>Bienvenido: ' + userEmail + '</span>';
+        let header = document.querySelector('header');
+        let bienvenida = document.createElement('p');
+        bienvenida.textContent = 'Bienvenido: ' + userEmail;
+        header.appendChild(bienvenida);
 
-        var enlacesMenu = document.querySelectorAll('nav a');
-        enlacesMenu.forEach(function(enlace) {
-            var textoEnlace = enlace.textContent.toLowerCase();
-            if (textoEnlace === 'login' || textoEnlace === 'registro') {
-                enlace.style.display = 'none';
-            }
-        });
+        let login = document.getElementById('usuario');
+        if (login) login.style.display = 'none';
 
-        var logoutEnlace = '<a href="#" id="logout">logout</a>';
-        header.innerHTML += logoutEnlace;
+        let Registro = document.getElementById('usuario2');
+        if (Registro) Registro.style.display = 'none';
+
+        let logoutEnlace = document.createElement('a');
+        logoutEnlace.id = 'logout';
+        logoutEnlace.textContent = 'Logout';
+        header.appendChild(logoutEnlace);
 
         document.getElementById('logout').addEventListener('click', function(event) {
             event.preventDefault();
