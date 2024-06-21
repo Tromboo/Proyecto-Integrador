@@ -1,41 +1,38 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const productosContainer = document.querySelector('#productosContainer');
+    const productosContainer = document.querySelector('#productos')
     const finalizarCompraButton = document.querySelector('#finalizarCompra');
+    const texto = document.querySelector('#productos');
 
 
-
-    function mostrarProductos(productos) {
-        if (productos.length === 0) {
-            productosContainer.innerHTML = '<p>Su carrito está vacío</p>';
-        } else {
-            let html = '';
-            productos.forEach(producto => {
-                html += `
-                    <div>
-                        <h3>${producto.nombre}</h3>
-                        <img src="${producto.imagen}" alt="${producto.nombre}">
-                        <p>${producto.descripcion}<br>Precio: ${producto.precio}$</p>
-                    </div>
-                `;
-            });
-            productosContainer.innerHTML = html;
-        }
-    }
 
     function finalizarCompra() {
-        localStorage.removeItem('carrito');
+        localStorage.removeItem('cart');
         alert('Gracias por su compra');
         window.location.href = './index.html';
     }
 
     function cargarCarrito() {
-        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        const carrito = JSON.parse(localStorage.getItem('cart')) || [];
         if (carrito.length === 0) {
-            mostrarProductos([]);
+            texto.innerHTML = '<h4>Su carrito está vacío</h4>';
+            finalizarCompraButton.style.display = 'none';
         } else {
-            //https://www.youtube.com/watch?v=O3Ht2uejzfM//
-            const productosEnCarrito = productos.filter(producto => carrito.includes(producto.id));
-            mostrarProductos(productosEnCarrito);
+            productosContainer.innerHTML = '';
+            carrito.forEach(id => {
+                fetch(`https://fakestoreapi.com/products/${id}`)
+                    .then(response => response.json())
+                    .then(producto => {
+                        let productoDiv = document.createElement('div');
+                        productoDiv.innerHTML = `
+                            <img src="${producto.image}" alt="${producto.title}" class="imagenProducto">
+                            <h4>${producto.title}</h4>
+                            <p>${producto.description}</p>
+                            <p>Precio: $${producto.price}</p>
+                        `;
+                        productosContainer.appendChild(productoDiv);
+                    })
+            });
+            finalizarCompraButton.style.display = 'block';
         }
     }
 

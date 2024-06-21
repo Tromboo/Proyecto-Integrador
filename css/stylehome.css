@@ -68,13 +68,6 @@ li{
     margin: 10px 20px;
 }
 
-.productos{ 
-    flex: 200px; 
-    max-width: 300px; 
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-}
 
 section{
     background-color: white;

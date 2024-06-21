@@ -19,7 +19,7 @@ let accesorios = [];
 console.log(arrayDeProductos);
 
     for (let i = 4; i < 8; i++) {
-            accesorios += `<div>
+            accesorios += `<div class = "productos">
                         <img src="${arrayDeProductos[i].image}" alt="" class="imagenProducto">
                         <h3>${arrayDeProductos[i].title}</h3>
                         <p>${arrayDeProductos[i].description}</p>
@@ -39,7 +39,7 @@ console.log(arrayDeProductos);
 let divRopaHombre = document.querySelector('.subContainerRopaH');
         let ropaH = [];
         for (let i = 0; i < 4; i++) {
-            ropaH += `<div>
+            ropaH += `<div class = "productos">
                         <img src="${arrayDeProductos[i].image}" alt="${arrayDeProductos[i].title}" class="imagenProducto">
                         <h3>${arrayDeProductos[i].title}</h3>
                         <p>${arrayDeProductos[i].description}</p>
@@ -57,7 +57,7 @@ let divRopaHombre = document.querySelector('.subContainerRopaH');
     console.log(arrayDeProductos);
     
         for (let i = 9; i < 13; i++) {
-                electronica += `<div>
+                electronica += `<div class = "productos">
                             <img src="${arrayDeProductos[i].image}" alt="" class="imagenProducto">
                             <h3>${arrayDeProductos[i].title}</h3>
                             <p>${arrayDeProductos[i].description}</p>
